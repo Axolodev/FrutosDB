@@ -6,6 +6,7 @@ node_modules/
 /.idea
 Homestead.json
 Homestead.yaml
+.env
 
 
 # Laravel 4 specific
