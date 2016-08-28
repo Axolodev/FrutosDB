@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return Response::json(array("Hello"));
+    return view('index', array(
+        'teachers' => App\Profesor::all(),
+    ));
 });
 
 Route::get('profesores', function () {
