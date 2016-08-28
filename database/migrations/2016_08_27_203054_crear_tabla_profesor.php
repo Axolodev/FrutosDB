@@ -19,8 +19,8 @@ class CrearTablaProfesor extends Migration
             $table->softDeletes();
             $table->string('nombre');
             $table->string('oficina');
-            $table->integer('string');
-            $table->string('correo');
+            $table->string('telefono');
+            $table->string('correo')->nullable();
             $table->timestamps();
         });
     }
