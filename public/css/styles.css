@@ -1,3 +1,7 @@
 #small-img {
     width:5em;
 }
+
+.navbar {
+    border-radius:0;
+}

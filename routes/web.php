@@ -30,7 +30,11 @@ Route::get('proyectos', function () {
 
 Route::get('/dashboard', function(){
     return view('dashboard'); 
-})->middleware('auth');;
+})->middleware('auth');
+
+Route::get('/registro_proyecto/{proyecto?}', function(\Proyecto $proyecto = null){
+    return view('registro_proyecto', array("proyecto" => $proyecto));
+});
 
 
 Route::get('/profesor', 'ProfesorController@index');
