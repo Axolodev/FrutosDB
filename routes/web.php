@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('index', array(
         'teachers' => App\Profesor::all(),
+        'schools' => App\Escuela::all(),
+        'areas' => App\AreaEstrategica::all()
     ));
 });
 

@@ -23,7 +23,9 @@ class ProfesorController extends Controller {
     }
     
     public function show(Profesor $profesor){
-        return view('profesor', $profesor);
+        $proyectos = \App\Proyecto::where("id_profesor", "=", $profesor->id)->get();
+        
+        return view('profesor', array("profesor" => $profesor, "proyectos" => $proyectos));
     }
     
     public function edit(Profesor $profesor){
