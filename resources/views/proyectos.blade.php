@@ -8,12 +8,9 @@
                 <h1>Proyectos</h1>
                 <ol>
                     @foreach($projects as $project)
-                    <li>{{{$project.titulo}}
-                    <ul>{{{$project.resumen}}}</ul></li>
+                        <li>{{$project['titulo']}}</li>
+                        <ul>{{$project['resumen']}}</ul></li>
                     @endforeach
-                    
-                    
-                    
                     <li>Proyecto 1</li>
                     <li>Proyecto 2
                         <ul>
@@ -26,4 +23,3 @@
 
         </div>
     </div>
-@show@stop
