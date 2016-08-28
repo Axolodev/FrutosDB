@@ -11,16 +11,6 @@
                     <li>{{{$project.titulo}}
                     <ul>{{{$project.resumen}}}</ul></li>
                     @endforeach
-                    
-                    
-                    
-                    <li>Proyecto 1</li>
-                    <li>Proyecto 2
-                        <ul>
-                            <li>Descripción del proyecto </li>
-                        </ul>
-                    </li>
-                    <li>Proyecto 3</li>
                 </ol>
             </div>
 
