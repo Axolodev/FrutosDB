@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('index', array(
         'teachers' => App\Profesor::all(),
+        'schools' => App\Escuela::all(),
+        'areas' => App\AreaEstrategica::all()
     ));
 });
 
@@ -34,3 +36,11 @@ Route::get('/profesor/{profesor}', 'ProfesorController@show');
 Route::get('/profesor/{profesor}/edit', 'ProfesorController@edit');
 Route::put('/profesor/{profesor}', 'ProfesorController@update');
 Route::delete('/profesor/{profesor}', 'ProfesorController@destroy');
+
+Route::get('/proyecto', 'ProyectoController@index');
+Route::get('/proyecto/create', 'ProyectoController@create');
+Route::post('/proyecto', 'ProyectoController@store');
+Route::get('/proyecto/{proyecto}', 'ProyectoController@show');
+Route::get('/proyecto/{proyecto}/edit', 'ProyectoController@edit');
+Route::put('/proyecto/{proyecto}', 'ProyectoController@update');
+Route::delete('/proyecto/{proyecto}', 'ProyectoController@destroy');
