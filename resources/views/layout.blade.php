@@ -64,18 +64,28 @@
     <br>
     <!--End Content-->
     <!--FOOTER BEGIN--->
-    <div class="container-fluid" style="background-color:black; color:white;">
+    <div class="container-fluid" style="background-color:#2c3e50; color:white;">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" align="center">
-                <h3>PIP</h3>
-                <h4>Proyecto Hackaton</h4> </div>
+                <img id="medium-img" style="width:30%;" src="/assets/imgs/logo.png" />
+                <h4><i>Plataforma de Investigadores y Proyectos</i></h4> </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" align="center">
-                <h4>Gerardo Tenorio</h4>
+                <br>
+                <br>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h4>Gerardo Tenorio</h4>
                 <h4>Roberto Ruiz</h4>
-                <h4>Melissa González</h4>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                     <h4>Melissa González</h4>
                 <h4>Carlos Frutos</h4> </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" align="left">
-                <h4>Algo más de información</h4> </div>
+                </div>
+                
+               
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" align="center">
+                <br>
+                <br>
+                <h4>Versión 1.0</h4> </div>
         </div>
     </div>
     <!--FOOTER END--->
