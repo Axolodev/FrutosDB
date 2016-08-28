@@ -22,19 +22,19 @@ class GrupoInvestigacionController extends Controller
 
     }
 
-    public function show(GrupoInvestigacion $lineaInvestigacion){
-        return view('lineaInvestigacion', $grupoInvestigacion);
+    public function show(GrupoInvestigacion $grupoInvestigacion){
+        return view('grupoInvestigacion', $grupoInvestigacion);
     }
 
-    public function edit(GrupoInvestigacion $lineaInvestigacion){
+    public function edit(GrupoInvestigacion $grupoInvestigacion){
         
     }
     
-    public function update(GrupoInvestigacion $lineaInvestigacion){
+    public function update(GrupoInvestigacion $grupoInvestigacion){
         
     }
 
-    public function destroy(GrupoInvestigacion $lineaInvestigacion){
+    public function destroy(GrupoInvestigacion $grupoInvestigacion){
         
         $grupoInvestigacion->delete();
         $response = [
