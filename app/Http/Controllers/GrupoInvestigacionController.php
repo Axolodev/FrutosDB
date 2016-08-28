@@ -23,7 +23,7 @@ class GrupoInvestigacionController extends Controller
     }
 
     public function show(GrupoInvestigacion $lineaInvestigacion){
-        return view('lineaInvestigacion', $grupoInvestigacion);
+        return view('grupoInvestigacion', $grupoInvestigacion);
     }
 
     public function edit(GrupoInvestigacion $lineaInvestigacion){
