@@ -1,3 +1,5 @@
+/config/database.php
+.phpintel
 vendor/
 node_modules/
 /node_modules
@@ -22,6 +24,3 @@ bootstrap/cache/
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
-
-config/database.php
-/.phpintel
