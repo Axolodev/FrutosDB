@@ -1,7 +1,7 @@
 @extends('layout') @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-10">
            @if (strcmp($proyecto["estado"], "abierto") == 0)
             <div class="panel panel-success">
             @elseif (strcmp($proyecto["estado"], "cerrado") == 0)

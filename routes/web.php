@@ -28,6 +28,10 @@ Route::get('proyectos', function () {
 	return view('proyectos', ["projects" => $proyectos]);
 });
 
+Route::get('/dashboard', function(){
+    return view('dashboard'); 
+})->middleware('auth');;
+
 
 Route::get('/profesor', 'ProfesorController@index');
 Route::get('/profesor/create', 'ProfesorController@create');
@@ -89,7 +93,6 @@ Route::get('/user/{user}/edit', 'UserController@edit');
 Route::put('/user/{user}', 'UserController@update');
 Route::delete('/user/{user}', 'UserController@destroy');
 Auth::routes();
-
 
 
 
