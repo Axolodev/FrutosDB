@@ -61,21 +61,25 @@ Route::get('/escuela/{escuela}/edit', 'EscuelaController@edit');
 Route::put('/escuela/{escuela}', 'EscuelaController@update');
 Route::delete('/escuela/{escuela}', 'EscuelaController@destroy');
 
-Route::get('/grupoInvestigacion', 'GrupoInvestigacionController@index');
-Route::get('/grupoInvestigacion/create', 'GrupoInvestigacionController@create');
-Route::post('/grupoInvestigacion', 'GrupoInvestigacionController@store');
-Route::get('/grupoInvestigacion/{grupoInvestigacion}', 'GrupoInvestigacionController@show');
-Route::get('/grupoInvestigacion/{grupoInvestigacion}/edit', 'GrupoInvestigacionController@edit');
-Route::put('/grupoInvestigacion/{grupoInvestigacion}', 'GrupoInvestigacionController@update');
-Route::delete('/grupoInvestigacion/{grupoInvestigacion}', 'GrupoInvestigacionController@destroy');
+Route::get('/grupoinvestigacion/all', 'GrupoInvestigacionController@viewAll');
+Route::get('/grupoinvestigacion', 'GrupoInvestigacionController@index');
+Route::get('/grupoinvestigacion/create', 'GrupoInvestigacionController@create');
+Route::post('/grupoinvestigacion', 'GrupoInvestigacionController@store');
+Route::get('/grupoinvestigacion/{grupoInvestigacion}', 'GrupoInvestigacionController@show');
+Route::get('/grupoinvestigacion/area/{grupoInvestigacion}', 'GrupoInvestigacionController@grupoArea');
+Route::get('/grupoinvestigacion/escuela/{grupoInvestigacion}', 'GrupoInvestigacionController@grupoEscuela');
+Route::get('/grupoinvestigacion/{grupoInvestigacion}/edit', 'GrupoInvestigacionController@edit');
+Route::put('/grupoinvestigacion/{grupoInvestigacion}', 'GrupoInvestigacionController@update');
+Route::delete('/grupoinvestigacion/{grupoInvestigacion}', 'GrupoInvestigacionController@destroy');
 
-Route::get('/lineaInvestigacion', 'LineaInvestigacionController@index');
-Route::get('/lineaInvestigacion/create', 'LineaInvestigacionController@create');
-Route::post('/lineaInvestigacion', 'LineaInvestigacionController@store');
-Route::get('/lineaInvestigacion/{lineaInvestigacion}', 'LineaInvestigacionController@show');
-Route::get('/lineaInvestigacion/{lineaInvestigacion}/edit', 'LineaInvestigacionController@edit');
-Route::put('/lineaInvestigacion/{lineaInvestigacion}', 'LineaInvestigacionController@update');
-Route::delete('/lineaInvestigacion/{lineaInvestigacion}', 'LineaInvestigacionController@destroy');
+
+Route::get('/lineainvestigacion', 'LineaInvestigacionController@index');
+Route::get('/lineainvestigacion/create', 'LineaInvestigacionController@create');
+Route::post('/lineainvestigacion', 'LineaInvestigacionController@store');
+Route::get('/lineainvestigacion/{lineaInvestigacion}', 'LineaInvestigacionController@show');
+Route::get('/lineainvestigacion/{lineaInvestigacion}/edit', 'LineaInvestigacionController@edit');
+Route::put('/lineainvestigacion/{lineaInvestigacion}', 'LineaInvestigacionController@update');
+Route::delete('/lineainvestigacion/{lineaInvestigacion}', 'LineaInvestigacionController@destroy');
 
 Route::get('/user', 'UserController@index');
 Route::get('/user/create', 'UserController@create');

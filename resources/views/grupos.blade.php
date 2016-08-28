@@ -1,19 +1,19 @@
-@extends('layout')
-
-@section('content')
+@extends('layout') @section('content')
 <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" align="center">
-                <h1>Bioteconolgía</h1>
-                <br>
-                <h2> Grupos de Investigación</h2>
-                <br>
-                <h3>Grupo 1</h3>
-                <h3>Grupo 2</h3>
-                <h3>Grupo 3</h3>
-                <h3>Grupo 4</h3>
-                <h3>Grupo 5</h3>
+    <div class="row">
+        <div class="col-xs-8" align="center">
+            <h1>Grupos de Investigación</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    @for ($i = 0 ; $i
+                    < count($grupos) ; $i++) <a href="/grupoinvestigacion/{{ $grupos[$i]["id"] }}">
+                       
+                        <h4>{{ $grupos[$i]["nombre"] }}</h4></a> 
+                        @if ($i != count($grupos) - 1)
+                        <hr>
+                        @endif
+                        @endfor </div>
             </div>
         </div>
     </div>
-@stop
+</div> @stop

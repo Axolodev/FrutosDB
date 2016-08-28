@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\LineaInvestigacion
+use App\LineaInvestigacion;
+use App\Proyecto;
 use App\Http\Requests;
 
 class LineaInvestigacionController extends Controller
@@ -23,7 +24,11 @@ class LineaInvestigacionController extends Controller
     }
 
     public function show(LineaInvestigacion $lineaInvestigacion){
-        return view('lineaInvestigacion', $lineaInvestigacion);
+        $proyectos = Proyecto::where("id_linea_investigacion", "=", $lineaInvestigacion->id)->get();
+        return view('linea', array(
+            "linea" => $lineaInvestigacion,
+            "proyectos" => $proyectos
+        ));
     }
 
     public function edit(LineaInvestigacion $lineaInvestigacion){

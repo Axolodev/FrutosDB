@@ -18,9 +18,7 @@
             </div>
             <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6" align=right >
                 <img src="http://placehold.it/300x300">
-
             </div>
         </div>
     </div>
-
 @stop
