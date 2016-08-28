@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\AreaEstrategica
+use App\AreaEstrategica;
 use App\Http\Requests;
 
 class AreaEstrategicaController extends Controller {

@@ -88,3 +88,9 @@ Route::get('/user/{user}', 'UserController@show');
 Route::get('/user/{user}/edit', 'UserController@edit');
 Route::put('/user/{user}', 'UserController@update');
 Route::delete('/user/{user}', 'UserController@destroy');
+Auth::routes();
+
+
+
+
+Route::get('/home', 'HomeController@index');
