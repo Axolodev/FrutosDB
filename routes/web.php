@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$teachers = array(array('nombre' => 'Roberto'), array('nombre' => 'Tenorio'));
+    return view('index', ["teachers" => $teachers]);
 });

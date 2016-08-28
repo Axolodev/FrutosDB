@@ -44,11 +44,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                     @foreach($teachers as $teacher)
-                    <tr>
-                        <td>{{$teacher.name}}</td>
-                    </tr>
-                    @endforeach                    
+                    @foreach($teachers as $teacher)
+                        <tr>
+                            <td>{{ $teacher["nombre"] }}</td>
+                        </tr>
+                    @endforeach            
                     
                 </tbody>
                 </table>
