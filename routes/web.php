@@ -32,8 +32,9 @@ Route::get('/dashboard', function(){
     return view('dashboard'); 
 })->middleware('auth');
 
-Route::get('/registro_proyecto/{proyecto?}', function(\Proyecto $proyecto = null){
-    return view('registro_proyecto', array("proyecto" => $proyecto));
+Route::get('/registro_proyecto', function(){
+    $profesores = App\Profesor::all();
+    return view('registro_proyecto', array('profesores' => $profesores));
 });
 
 
