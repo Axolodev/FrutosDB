@@ -4,17 +4,19 @@
 <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <h2>Nombre del proyecto</h2>
-                <h2><a href="#">Profesor Lider</a></h2>
-                <h2>Linea de Investigación</h2>
-                <p>Resumen del Proyecto: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>{{ $proyecto["nombre"] }}</h2>
+                <h2>Profesor Líder: <a href="/profesor/{{ $profesor_lider["id"] }}">{{ $profesor_lider["nombre"] }}</a></h2>
+                <h2>Linea de Investigación: {{ $linea["name"] }}</h2>
+                <p><strong>Resumen del Proyecto:</strong><div>
+                    {{ $proyecto["descripcion"]}}
+                </div></p>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <h3>Estado: Disponible/No disponible/Terminado</h3>
+                <h3>Estado: {{ $proyecto["estado"] }}</h3>
             </div>
 
         </div>
     </div>
 
     </div>
-@show@stop
+@stop

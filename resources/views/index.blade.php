@@ -12,7 +12,7 @@
             <h1>Area</h1> @foreach ($areas as $area)
             <div class="col-xs-12">
                 <div class="row">
-                    <div class="text-center"> <a href="/grupoinvestigacion/area/{{ $school['id'] }}"><h4>{{ $school['nombre'] }}</h4></a> </div>
+                    <div class="text-center"> <a href="/grupoinvestigacion/area/{{ $school['id'] }}"><h4>{{ $area['nombre'] }}</h4></a> </div>
                 </div>
             </div> @endforeach
         </div>

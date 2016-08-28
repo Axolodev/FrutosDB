@@ -22,7 +22,9 @@ class ProyectoController extends Controller{
     }
 
     public function show(Proyecto $proyecto){
-        return view('proyecto', $proyecto);
+        $profesor = $proyecto->profesor_lider;
+        $linea = $proyecto->linea_investigacion;
+        return view('descripcion', array("proyecto" => $proyecto, "profesor_lider" => $profesor, "linea" => $linea));
     }
 
     public function edit(Proyecto $proyecto){
