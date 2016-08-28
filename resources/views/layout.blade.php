@@ -9,7 +9,7 @@
     <title></title>
 
     <!-- Bootstrap -->
-    <link href="<?php echo asset('css/template.css') ?>" rel="stylesheet">
+    <link href="{{asset('css/template.css') }}" type="text/css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">   
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,6 +18,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">PIP</a>
+                 <a href="/"><img id="small-img" src="/assets/imgs/logo.png" /></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,6 +53,7 @@
     <!--NAVBAR ENDS-->
     <!--Content-->
     @yield('content')
+    <br>
     <!--End Content-->
 
     <!--FOOTER BEGIN--->
